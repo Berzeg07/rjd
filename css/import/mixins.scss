@@ -1,0 +1,14 @@
+@mixin container($width, $margin: 0, $padding: 0) {
+    max-width: $width;
+    width: 100%;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex($fd: row, $ai: baseline, $jc: flex-start, $fw: wrap ) {
+    display: flex;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+    align-items: $ai;
+    justify-content: $jc;
+}
