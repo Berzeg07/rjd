@@ -4,11 +4,29 @@
     margin: $margin;
     padding: $padding;
 }
-
-@mixin flex($fd: row, $ai: baseline, $jc: flex-start, $fw: wrap ) {
+@mixin flex($fd: row, $ai: baseline, $jc: flex-start, $fw: wrap) {
     display: flex;
     flex-wrap: $fw;
     flex-direction: $fd;
     align-items: $ai;
     justify-content: $jc;
+}
+@mixin positionCenter($left: 0, $top: 0, $width: 0px, $height: 0px, $pos: translateY(-50%), $bg: none) {
+    content: '';
+    position: absolute;
+    left: $left;
+    top: $top;
+    width: $width;
+    height: $height;
+    transform: $pos;
+    background: $bg;
+}
+@mixin position($left: 0, $top: 0, $width: 0px, $height: 0px, $bg: none) {
+    content: '';
+    position: absolute;
+    left: $left;
+    top: $top;
+    width: $width;
+    height: $height;
+    background: $bg;
 }

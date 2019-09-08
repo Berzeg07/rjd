@@ -1,0 +1,24 @@
+.modal.fade(id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-body
+                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true") &times;
+                .form
+                    form(action="#").form-main
+                        .form-top
+                            label.form-label
+                                input(type="text" placeholder="Email").inp
+                            label.form-text    
+                                textarea(placeholder="Текст сообщения").textarea
+                        .form-bottom
+                            .form-item
+                                img(src="img/capcha.jpg")
+                            .form-item
+                                center
+                                    button.button.ripple Отправить
+                                    
+                        .form-privacy
+                            p Нажав на кнопку “заказать обратный звонок” Вы соглашаетесь с 
+                                a(href="#") условиями публичной оферты и с условиями 
+                                a(href="#") Политики обработки персональных данных      
